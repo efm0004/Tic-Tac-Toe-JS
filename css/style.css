@@ -1,0 +1,34 @@
+*, *::before, *after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    grid-gap: 1vmin;
+    margin-bottom: 8vmin;
+}
+
+section.board div {
+    border-radius: 5%;
+    border: 1px solid grey;
+}
+
+section.board div:hover {
+    border-top-color:  grey;
+}
+
+section.button {
+    margin: 10px; 
+}
+
